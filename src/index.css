@@ -1,0 +1,110 @@
+table {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #87CEEB;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e0f7ff;
+  transition: background-color 0.3s ease;
+}
+
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.download-button {
+  margin-left: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #6db9d9;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #5aa6c5;
+}
+
+.download-button button {
+  background-color: #4CAF50;
+}
+
+.download-button button:hover {
+  background-color: #45a049;
+}
+
+.download-button button:active {
+  background-color: #3e8e41;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th {
+    display: none;
+  }
+  td {
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+  td:before {
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    color: #333;
+    content: attr(data-label);
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+}

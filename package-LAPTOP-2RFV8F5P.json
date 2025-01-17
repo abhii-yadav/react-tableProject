@@ -1,0 +1,57 @@
+{
+    "name": "react-tableProject",
+    "version": "1.0.0",
+    "description": "A ReactJS project with a functional table component that includes pagination, sorting, global filtering, mobile responsiveness, and Excel download functionality.",
+    "main": "index.js",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "keywords": [
+        "react",
+        "table",
+        "pagination",
+        "sorting",
+        "filtering",
+        "responsive",
+        "excel-download"
+    ],
+    "author": "Abhishek",
+    "license": "ISC",
+    "dependencies": {
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@mui/material": "^6.4.0",
+        "@reduxjs/toolkit": "^2.5.0",
+        "bootstrap": "^5.3.3",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-redux": "^9.2.0",
+        "react-scripts": "5.0.1",
+        "react-table": "^7.8.0",
+        "xlsx": "^0.18.5"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    }
+}
