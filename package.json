@@ -1,5 +1,5 @@
 {
-    "name": "react-table-project",
+    "name": "react-tableProject",
     "version": "1.0.0",
     "description": "A ReactJS project with a functional table component that includes pagination, sorting, global filtering, mobile responsiveness, and Excel download functionality.",
     "main": "index.js",
